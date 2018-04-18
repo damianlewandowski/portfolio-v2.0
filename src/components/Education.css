@@ -1,0 +1,42 @@
+.Education {
+  padding: 5rem 0;
+  width: 100%;  
+}
+
+.Education-container {
+  width: 100%;
+}
+
+.Education-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Education-item:not(:last-child) {
+  margin-bottom: 2.5rem;  
+}
+
+.Education-item div {
+  width: 65%;
+}
+
+.Education-item h2 {
+  line-height: 1.6rem;
+}
+
+.Education-item h6 {
+  line-height: 1.2rem;
+  color: #517cd6;
+  width: 30%;
+  text-align: right;
+}
+
+@media only screen and (min-width: 768px) {
+  .Education {
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}

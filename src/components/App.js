@@ -4,6 +4,7 @@ import MobileNav from './MobileNav';
 import About from './About';
 import Interests from './Interests';
 import Skills from './Skills';
+import Education from './Education';
 import './App.css';
 
 const App = () => {
@@ -17,7 +18,9 @@ const App = () => {
         <Interests /> 
         <hr/>
         <Skills /> 
-        <hr/>            
+        <hr/>
+        <Education />
+        <hr/>        
       </div>
     </div>
   );
