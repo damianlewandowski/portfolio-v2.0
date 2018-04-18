@@ -1,7 +1,12 @@
 .container {
   width: 90%;
-  margin: 7rem auto 0 auto;
+  margin: 3.33rem auto 0 auto;
   color: #343a40;
+}
+
+p {
+  color: #7b8691;
+  line-height: 1.4rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -19,6 +24,6 @@
 @media only screen and (min-width: 1024px) {
   .container {
     width: 65%;
-    padding-left: 5rem;
+    padding-left: 2rem;
   }
 }

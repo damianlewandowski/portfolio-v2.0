@@ -1,0 +1,23 @@
+.Interests {
+  padding: 5rem 0;
+}
+
+.Interests h1 {
+  font-family: Montserrat;
+  font-size: 2.8rem;  
+  margin-bottom: 3rem;
+}
+
+.Interests p {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .Interests {
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}

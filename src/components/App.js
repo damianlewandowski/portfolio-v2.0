@@ -2,6 +2,7 @@ import React from 'react';
 import SideNav from './SideNav';
 import MobileNav from './MobileNav';
 import About from './About';
+import Interests from './Interests';
 import './App.css';
 
 const App = () => {
@@ -11,6 +12,9 @@ const App = () => {
       <MobileNav />
       <div className="container">
         <About />
+        <hr/>
+        <Interests /> 
+        <hr/>       
       </div>
     </div>
   );
