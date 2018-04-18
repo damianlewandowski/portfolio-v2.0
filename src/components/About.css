@@ -39,23 +39,14 @@
   flex-wrap: wrap;
 }
 
-.About-links li {
-  background: #454c51;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-}
-
-.About-links li img {
-  max-width: 100%;
-}
-
 .About-links a {
-  font-size: 1.3rem;  
-  color: #fff;   
+  display: inline;
+  font-size: 1.3rem;
+  color: #454c51;
+}
+
+.About-links a:hover {
+  color: #3b5998;
 }
 
 @media only screen and (min-width: 768px) {

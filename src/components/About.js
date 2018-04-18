@@ -25,22 +25,30 @@ const About = () => {
         <ul className="About-links">
           <li>
             <a href="https://github.com/damianlewandowski">
-              <i className="fab fa-github"></i>
+            <div className="fa-2x">
+              <i className="fab fa-github" data-fa-transform="shrink-8" data-fa-mask="fas fa-circle"></i>
+            </div>
             </a>
           </li>
           <li>
             <a href="https://www.freecodecamp.org/damianlewandowski">
-              <i className="fab fa-free-code-camp"></i>
+              <div className="fa-2x">
+                <i className="fab fa-free-code-camp" data-fa-transform="shrink-8" data-fa-mask="fas fa-circle"></i>
+              </div>
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/damian-lewandowski">
-              <i className="fab fa-linkedin-in"></i>
+              <div className="fa-2x">
+                <i className="fab fa-linkedin-in" data-fa-transform="shrink-8" data-fa-mask="fas fa-circle"></i>
+              </div>
             </a>
           </li>
           <li>
             <a href="https://www.codewars.com/users/damianlewandowski">
-              <i className="fab fa-js"></i>
+              <div className="fa-2x">
+                <i className="fab fa-js" data-fa-transform="shrink-8" data-fa-mask="fas fa-circle"></i>
+              </div>
             </a>
           </li>
         </ul>
