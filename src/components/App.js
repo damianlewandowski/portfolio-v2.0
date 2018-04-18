@@ -3,6 +3,7 @@ import SideNav from './SideNav';
 import MobileNav from './MobileNav';
 import About from './About';
 import Interests from './Interests';
+import Skills from './Skills';
 import './App.css';
 
 const App = () => {
@@ -14,7 +15,9 @@ const App = () => {
         <About />
         <hr/>
         <Interests /> 
-        <hr/>       
+        <hr/>
+        <Skills /> 
+        <hr/>            
       </div>
     </div>
   );

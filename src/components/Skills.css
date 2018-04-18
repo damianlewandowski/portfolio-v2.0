@@ -1,0 +1,50 @@
+.Skills {
+  padding: 5rem 0;
+}
+
+.Skills li {
+  width: 40px;
+  height: 40px;
+}
+
+.Skills svg {
+  filter: green;
+}
+
+.Skills h1 {
+  font-family: Montserrat;
+  font-size: 2.8rem;  
+  margin-bottom: 3rem;
+}
+
+.Skills h4 {
+  margin-bottom: .5rem;
+}
+
+.Skills-list {
+  font-size: 2.2rem;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  grid-gap: 1.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .Skills {
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Skills-list {
+    font-size: 2.2rem;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+    grid-gap: 1.5rem;
+  }
+}
