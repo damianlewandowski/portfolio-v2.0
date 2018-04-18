@@ -1,0 +1,33 @@
+.SideNav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px;
+  height: 100vh;
+  background: #3b5998;
+  border-right: #284788;
+}
+
+.SideNav-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.SideNav-content img {
+  width: 120px;
+  border: 6px solid rgba(255, 255, 255, .3);
+  border-radius: 50%;
+}
+
+.SideNav-links li {
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .SideNav {
+    display: none;
+  }
+}

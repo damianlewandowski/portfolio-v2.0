@@ -1,0 +1,16 @@
+.NavList {
+  font-family: Montserrat;
+}
+
+.NavList li:not(:last-child) {
+  margin-bottom: .8rem;
+}
+
+.NavList li a {
+  color: #bbb;
+  font-size: .9rem;
+}
+
+.NavList li a:hover {
+  color: #ddd;
+}
