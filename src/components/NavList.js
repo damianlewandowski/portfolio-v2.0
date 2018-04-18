@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import face from '../images/face.png';
 import './NavList.css';
 
@@ -31,5 +32,10 @@ const NavList = ({ customClass, showFace }) => {
     </ul>
   );
 };
+
+NavList.propTypes = {
+  customClass: PropTypes.string,
+  showFace: PropTypes.bool,
+}
 
 export default NavList;

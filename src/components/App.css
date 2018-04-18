@@ -1,0 +1,24 @@
+.container {
+  width: 90%;
+  margin: 7rem auto 0 auto;
+  color: #343a40;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    width: 75%;
+    padding-left: 9rem;    
+    margin: 0 auto;    
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 65%;
+    padding-left: 5rem;
+  }
+}

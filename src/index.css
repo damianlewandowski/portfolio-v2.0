@@ -8,6 +8,11 @@
   src: url("./fonts/Montserrat.ttf");
 }
 
+@font-face {
+  font-family: "Saira Extra Condensed";
+  src: url("./fonts/SairaExtraCondensed.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,5 +28,5 @@ ul {
 }
 
 body {
-  font-family: Roboto
+  font-family: Roboto;
 }
