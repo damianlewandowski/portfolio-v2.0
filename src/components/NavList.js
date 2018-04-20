@@ -15,7 +15,7 @@ const NavList = ({ customClass, showFace }) => {
           </li>
         : null}
       <li>
-        <Link to="/">ABOUT</Link>
+        <a href="#about">ABOUT</a>
       </li>
       <li>
         <Link to="/interests">INTERESTS</Link>
