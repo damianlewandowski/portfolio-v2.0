@@ -1,34 +1,37 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import face from '../images/face.png';
 import './NavList.css';
 
-const NavList = ({ customClass, showFace }) => {
+const LINKS = [
+  "ABOUT",
+  "INTERESTS",
+  "SKILLS",
+  "PROJECTS",
+  "EDUCATION"
+]
+
+const NavList = ({ customClass, showFace, smoothScroll, activeElement }) => {
+  const linksItems = LINKS.map((link, i) => (
+    <li key={i}>
+      <a
+        className={i === activeElement ? "active" : ""}
+        onClick={() => smoothScroll(i)}
+      >
+        {link}
+      </a>
+    </li>  
+  ))
   return (
     <ul className={`NavList ${customClass}`}>
       {showFace 
         ? <li>
-            <Link to="/">
+            <a onClick={() => smoothScroll(0)}>
               <img src={face} alt="my face"/>
-            </Link>
+            </a>
           </li>
         : null}
-      <li>
-        <a href="#about">ABOUT</a>
-      </li>
-      <li>
-        <Link to="/interests">INTERESTS</Link>
-      </li>
-      <li>
-        <Link to="/skills">SKILLS</Link>
-      </li>
-      <li>
-        <Link to="/projects">PROJECTS</Link>
-      </li>
-      <li>
-        <Link to="/education">EDUCATION</Link>
-      </li>
+      {linksItems}
     </ul>
   );
 };
@@ -36,6 +39,8 @@ const NavList = ({ customClass, showFace }) => {
 NavList.propTypes = {
   customClass: PropTypes.string,
   showFace: PropTypes.bool,
+  smoothScroll: PropTypes.func.isRequired,
+  activeElement: PropTypes.number.isRequired,
 }
 
 export default NavList;

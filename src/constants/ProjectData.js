@@ -2,7 +2,7 @@ import dungeonCrawlerImg from '../images/dungeon_crawler.png';
 import gameOfLifeImg from '../images/game_of_life.png';
 import weatherAppImg from '../images/weather_app.png';
 import snakeImg from '../images/snake.png';
-console.log(dungeonCrawlerImg);
+
 export default [
   {
     id: 0,

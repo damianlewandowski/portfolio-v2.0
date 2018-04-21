@@ -18,7 +18,7 @@ class Projects extends Component {
     ))
 
     return (
-      <section className="Projects">
+      <section className="Projects section">
         <div>
           <Headline text="PROJECTS" />
             <ul className="Projects-list">

@@ -12,11 +12,11 @@ const ProjectItem = ({ title, description, img, repoLink, websiteLink }) => {
       <h4>{title}</h4>
       <p>{description}</p>
       <div className="ProjectItem-links">
-        <a href="https://github.com/damianlewandowski/dungeon-crawler">
+        <a href="https://github.com/damianlewandowski/dungeon-crawler" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-github" data-fa-transform="shrink-8" data-fa-mask="fas fa-circle"></i>
           <span>Repository</span>
         </a>
-        <a href="https://damianlewandowski.github.io/dungeon-crawler/">
+        <a href="https://damianlewandowski.github.io/dungeon-crawler/" target="_blank" rel="noopener noreferrer">
           <i className="fas fa-link" data-fa-transform="shrink-8" data-fa-mask="fas fa-circle"></i>
           <span>Website</span>
         </a>

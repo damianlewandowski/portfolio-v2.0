@@ -9,8 +9,13 @@
 .NavList li a {
   color: #bbb;
   font-size: .9rem;
+  cursor: pointer;
 }
 
 .NavList li a:hover {
   color: #ddd;
+}
+
+.NavList li a.active {
+  color: #fff;
 }

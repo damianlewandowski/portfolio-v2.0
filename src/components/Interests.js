@@ -4,7 +4,7 @@ import './Interests.css';
 
 const Interests = () => {
   return (
-    <section className="Interests">
+    <section className="Interests section">
       <div>
         <Headline text="INTERESTS" />
         <p>Apart from building websites and learning new things, I enjoy exercising a lot. During summer days I spend my time jogging on the beach and riding a bike.

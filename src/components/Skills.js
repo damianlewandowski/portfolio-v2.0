@@ -6,7 +6,7 @@ import reduxLogo from '../images/redux.svg';
 
 const Skills = () => {
   return (
-    <section className="Skills">
+    <section className="Skills section">
       <div>
         <Headline text="SKILLS" />
         <h4>PROGRAMMING LANGUAGES & TOOLS</h4>
