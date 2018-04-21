@@ -45,6 +45,7 @@
 
 .ProjectItem-links a {
   color: #3763bf;
+  cursor: pointer;
 }
 
 .ProjectItem-links a:hover span {

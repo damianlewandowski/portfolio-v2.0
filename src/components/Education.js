@@ -16,7 +16,7 @@ const Education = () => {
               Informatics
             </div>
           </div>
-          <h6>2016 - 2018</h6>
+          <h6>2015 - 2017</h6>
         </div>
 
         <div className="Education-item">
