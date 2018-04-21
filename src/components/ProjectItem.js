@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import './ProjectItem.css';
 
 const ProjectItem = ({ title, description, img, repoLink, websiteLink }) => {
-  console.log(repoLink);
   return (
     <li className="ProjectItem">
       <a href={websiteLink} target="_blank" rel="noopener noreferrer">
