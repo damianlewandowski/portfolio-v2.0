@@ -11,6 +11,7 @@ import './App.css';
 class App extends Component {
   state = {
     element: 0,
+    mobilePotentialElement: 0,
     clientHeight: 0,
   }
 
@@ -44,6 +45,16 @@ class App extends Component {
       if(element !== potentialElement) {
         this.setState({ element: potentialElement })
       }
+      
+      const sections = Array.from(this.state.sections);
+      for(let i = 0; i < sections.length; i++) {
+        if(
+          scrollTop + document.documentElement.clientHeight / 2 >= sections[i].offsetTop &&
+          scrollTop < sections[i].offsetTop + sections[i].offsetHeight
+        ) {
+          this.setState({ mobilePotentialElement: i })
+        }
+      }
     })
   }  
 
@@ -56,11 +67,11 @@ class App extends Component {
   }
 
   render() {
-    const { element } = this.state;
+    const { element, mobilePotentialElement } = this.state;
     return (
       <div>
         <SideNav smoothScroll={this.smoothScroll} activeElement={element} />
-        <MobileNav smoothScroll={this.smoothScroll} activeElement={element} />
+        <MobileNav smoothScroll={this.smoothScroll} activeElement={mobilePotentialElement} />
         <div className="container">
           <About />
           <hr/>
