@@ -17,8 +17,9 @@
   max-width: 100%;
 }
 
-.ProjectItem h4 {
+.ProjectItem h3 {
   width: 100%;
+  font-size: .95rem;
   color: #343a40;
   text-align: center;
   margin: .5rem 0;
@@ -62,7 +63,7 @@
 @media only screen and (min-width: 1024px) {
   .ProjectItem {
     width: 100%;
-    font-size: .6rem;    
+    font-size: .7rem;
   }
 
   

@@ -8,7 +8,7 @@ const ProjectItem = ({ title, description, img, repoLink, websiteLink }) => {
       <a href={websiteLink} target="_blank" rel="noopener noreferrer">
         <img src={img} alt="dungeon crawler game"/>
       </a>
-      <h4>{title}</h4>
+      <h3>{title}</h3>
       <p>{description}</p>
       <div className="ProjectItem-links">
         <a href={repoLink} target="_blank" rel="noopener noreferrer">
