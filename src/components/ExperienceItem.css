@@ -1,0 +1,22 @@
+.ExperienceItem {
+  margin-bottom: 4rem;
+}
+
+.ExperienceItem header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.ExperienceItem h3 {
+  color: steelblue;
+  margin-bottom: 0.2rem;
+}
+
+.ExperienceItem-description {
+  width: 85%;
+}
+
+.fromTo {
+  color: steelblue;
+}

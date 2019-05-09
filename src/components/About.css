@@ -3,13 +3,13 @@
 }
 
 .About header {
-  font-family: "Saira Extra Condensed", serif;  
+  font-family: "Saira Extra Condensed", serif;
   font-size: 2.7rem;
   line-height: 4rem;
 }
 
 .About h1 {
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .About h1 span {
@@ -23,7 +23,7 @@
 }
 
 .About-details {
-  font-family: "Saira Extra Condensed", serif;  
+  font-family: "Saira Extra Condensed", serif;
 }
 
 .About-details h4 span {
@@ -31,7 +31,7 @@
 }
 
 .About-text {
-  margin-bottom: 2.6rem;    
+  margin-bottom: 2.6rem;
 }
 
 .About-links {
@@ -52,13 +52,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .About {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    height: 100vh;
-  }
-
   .About header {
     font-size: 3rem;
     line-height: 4rem;

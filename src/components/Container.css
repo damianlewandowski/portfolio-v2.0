@@ -1,0 +1,13 @@
+.Container {
+  width: 95%;
+  margin: 3.33rem auto 0 auto;
+  color: #7b8691;
+}
+
+@media only screen and (min-width: 768px) {
+  .Container {
+    margin-left: 220px;
+    padding: 12px 36px;
+    width: 80%;
+  }
+}

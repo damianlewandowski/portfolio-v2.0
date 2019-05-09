@@ -3,19 +3,19 @@
 }
 
 .NavList li:not(:last-child) {
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 .NavList li a {
-  color: #bbb;
-  font-size: .9rem;
+  color: #bbb !important;
+  font-size: 0.9rem;
   cursor: pointer;
 }
 
 .NavList li a:hover {
-  color: #ddd;
+  color: #ddd !important;
 }
 
 .NavList li a.active {
-  color: #fff;
+  color: #fff !important;
 }

@@ -1,35 +1,25 @@
-import React from 'react';
-import Headline from './Headline';
-import './Education.css';
+import React from "react";
+import Headline from "./Headline";
+import "./Education.css";
+import ExperienceItem from "./ExperienceItem";
 
 const Education = () => {
   return (
     <section className="Education section">
       <div className="Education-container">
         <Headline text="EDUCATION" />
-        <div className="Education-item">
-          <div>
-            <h2>NICOLAUS COPERNICUS UNIVERSITY IN TORUN</h2>
-            <h5>TERMINATED</h5>
-            <br/>
-            <div>
-              Informatics
-            </div>
-          </div>
-          <h6>2015 - 2017</h6>
-        </div>
-
-        <div className="Education-item">
-          <div>
-            <h2>FREE CODE CAMP</h2>
-            <h5>ONGOING</h5>
-            <br/>            
-            <div>
-              Web Development
-            </div>
-          </div>
-          <h6>2017 - 2018</h6>
-        </div>
+        <ExperienceItem
+          position="NICOLAUS COPERNICUS UNIVERSITY IN TORUN"
+          company="TERMINATED"
+          fromTo="2015 - 2017"
+          description=""
+        />
+        <ExperienceItem
+          position="FREE CODE CAMP"
+          company="ONGOING"
+          fromTo="2017 - PRESENT"
+          description=""
+        />
       </div>
     </section>
   );

@@ -1,15 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import face from '../images/face.png';
-import './NavList.css';
+import React from "react";
+import PropTypes from "prop-types";
+import face from "../images/face.png";
+import "./NavList.css";
 
 const LINKS = [
   "ABOUT",
-  "INTERESTS",
+  "EXPERIENCE",
   "SKILLS",
   "PROJECTS",
+  "INTERESTS",
   "EDUCATION"
-]
+];
 
 const NavList = ({ customClass, showFace, smoothScroll, activeElement }) => {
   const linksItems = LINKS.map((link, i) => (
@@ -20,17 +21,17 @@ const NavList = ({ customClass, showFace, smoothScroll, activeElement }) => {
       >
         {link}
       </a>
-    </li>  
-  ))
+    </li>
+  ));
   return (
     <ul className={`NavList ${customClass}`}>
-      {showFace 
-        ? <li>
-            <a onClick={() => smoothScroll(0)}>
-              <img src={face} alt="my face"/>
-            </a>
-          </li>
-        : null}
+      {showFace ? (
+        <li>
+          <a onClick={() => smoothScroll(0)}>
+            <img src={face} alt="my face" />
+          </a>
+        </li>
+      ) : null}
       {linksItems}
     </ul>
   );
@@ -40,7 +41,7 @@ NavList.propTypes = {
   customClass: PropTypes.string,
   showFace: PropTypes.bool,
   smoothScroll: PropTypes.func.isRequired,
-  activeElement: PropTypes.number.isRequired,
-}
+  activeElement: PropTypes.number.isRequired
+};
 
 export default NavList;

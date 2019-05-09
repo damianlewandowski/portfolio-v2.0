@@ -1,11 +1,10 @@
 .container {
-  width: 90%;
-  margin: 3.33rem auto 0 auto;
-  color: #7b8691;
+  display: block !important;
 }
 
-h1, h2 {
-  color: #343a40;  
+h1,
+h2 {
+  color: #343a40;
 }
 
 p {
@@ -19,8 +18,15 @@ p {
 
   .container {
     width: 75%;
-    padding-left: 9rem;    
-    margin: 0 auto;    
+    padding-left: 9rem;
+    margin: 0 auto;
+  }
+
+  .section {
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
-

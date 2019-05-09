@@ -1,6 +1,6 @@
 .Education {
   padding: 5rem 0;
-  width: 100%;  
+  width: 100%;
 }
 
 .Education-container {
@@ -10,18 +10,6 @@
 .Education-item {
   display: flex;
   justify-content: space-between;
-}
-
-.Education-item:not(:last-child) {
-  margin-bottom: 2.5rem;  
-}
-
-.Education-item div {
-  width: 65%;
-}
-
-.Education-item h2 {
-  line-height: 1.6rem;
 }
 
 .Education-item h6 {

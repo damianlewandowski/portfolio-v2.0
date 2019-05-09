@@ -1,8 +1,26 @@
-import React, { Component } from 'react';
-import Headline from './Headline';
-import ProjectItem from './ProjectItem';
-import PROJECT_DATA from '../constants/ProjectData';
-import './Projects.css';
+import React, { Component } from "react";
+import Headline from "./Headline";
+import ProjectItem from "./ProjectItem";
+import PROJECT_DATA from "../constants/ProjectData";
+import "./Projects.css";
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1
+  }
+};
 
 class Projects extends Component {
   render() {
@@ -15,15 +33,28 @@ class Projects extends Component {
         websiteLink={projectData.websiteLink}
         img={projectData.img}
       />
-    ))
+    ));
 
     return (
       <section className="Projects section">
-        <div>
+        <div className="Projects-content">
           <Headline text="PROJECTS" />
-            <ul className="Projects-list">
+          <div className="Projects-carousel">
+            <Carousel
+              swipeable
+              // showDots={true}
+              responsive={responsive}
+              infinite={true}
+              autoPlay={this.props.deviceType !== "mobile" ? true : false}
+              keyBoardControl={true}
+              containerClass="carousel-container"
+              removeArrowOnDeviceType={["tablet", "mobile"]}
+              dotListClass="custom-dot-list-style"
+              itemClass="carousel-item-padding-40-px"
+            >
               {projectItems}
-            </ul>
+            </Carousel>
+          </div>
         </div>
       </section>
     );
